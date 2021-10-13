@@ -1,0 +1,114 @@
+Q1)
+package Raam;
+
+public final class Student {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="javaaaaaa";
+		int l=s1.length();
+		int n=l/2;
+		if(l%2==0)
+		{
+			System.out.println(s1.substring(0,n));
+		}
+		else
+		{
+			System.out.println(s1.substring(0,n+1));
+		}
+		
+
+	}
+
+}
+Q2)
+import java.io.*;
+class Student
+{
+    
+    
+    public static void swap(String a,
+                                     String b)
+    {
+        int la = a.length();
+        int lb = b.length();
+  
+        
+        Stringc=a.substring(0,la/2) +
+                   b.substring(lb/2,lb);
+        String d = b.substring(0,lb/2) +
+                  a.substring(la/2,la);
+             
+        System.out.println(c + "\n" + d);
+    }
+    public static void main (String args[])
+    {
+       
+        String a = "remuneration";
+        String b = "day";
+         
+    
+        swap(a, b);
+    }
+3Q)
+package Raam;
+
+public final class Student {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="javaaaaaa";
+		int l=s1.length();
+		int n=l/2;
+		
+			System.out.println(s1.substring(n));
+
+		
+
+	}
+
+}
+
+}
+4Q)
+class Student {
+    public static String swap(String str)
+    {
+  
+        if(str==null||str.isEmpty())
+            return str;
+ char[] ch = str.toCharArray();
+  for (int i=0; i<ch.length-1;i+=2) {
+            char temp =ch[i];
+            ch[i]=ch[i+1];
+            ch[i+1]=temp;
+        }
+        return new String(ch);
+    }
+    public static void main(String args[])
+    {
+        String str = "Jai SRI RAM";
+        System.out.println(swap(str));
+    }
+}
+6Q)
+public class PalindromeChecker {  
+public static boolean isPalindrome(String str){  
+    StringBuilder sb=new StringBuilder(str);  
+    sb.reverse();  
+    String rev=sb.toString();  
+    if(str.equals(rev)){  
+        return true;  
+    }else{  
+        return false;  
+    }  
+}  
+public static void main(STring[] args)
+{
+    Scanner s=new Scanner(System.in);
+    String str=s.nextLine();
+      
+    isPalindrome(str);
+}  
